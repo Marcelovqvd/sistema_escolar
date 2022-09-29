@@ -4,7 +4,7 @@ interface StudentsProps {
   document: number
 }
 
-class Student {
+export class Student {
   private props: StudentsProps;
 
   get student() {
