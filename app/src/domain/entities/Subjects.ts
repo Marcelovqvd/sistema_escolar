@@ -8,7 +8,7 @@ type SubjectsProps = {
 
 export class Subjects extends Entity<SubjectsProps> {
   private constructor(props: SubjectsProps, id?: string) {
-    super(props, id);
+    super(id, props);
   }
 
   create(props: SubjectsProps, id?: string) {
