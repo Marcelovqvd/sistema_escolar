@@ -16,6 +16,12 @@ export class Student {
   }
 
   constructor(props: StudentProps) {
+    const { age } = props;
+
+    if (age < 17) {
+      throw new Error("Invalid Parameters");
+    }
+
     this.props = props;
   }
 }
