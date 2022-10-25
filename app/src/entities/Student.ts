@@ -1,7 +1,7 @@
 export interface StudentProps {
   name: string;
   age: number;
-  createdAt: Date;
+  createdAt?: Date;
 }
 
 export class Student {
